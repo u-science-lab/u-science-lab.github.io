@@ -9,6 +9,8 @@ await mkdir(path.join(output, 'assets', 'projects'), { recursive: true });
 const css = await readFile(path.join(root, 'site.css'));
 const cssName = `site.${createHash('sha256').update(css).digest('hex').slice(0, 12)}.css`;
 await writeFile(path.join(output, 'assets', cssName), css);
+// Keep the previous URL alive for visitors with older HTML cached during rollout.
+await writeFile(path.join(output, 'site.css'), css);
 for (const file of ['index.html', '404.html']) {
   const html = await readFile(path.join(root, file), 'utf8');
   await writeFile(path.join(output, file), html.replace(/href="\/site\.css(?:\?[^"]*)?"/g, `href="/assets/${cssName}"`));
