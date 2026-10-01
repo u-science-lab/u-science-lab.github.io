@@ -15,12 +15,32 @@
     <a class="brand" href="/" aria-label="U-Science home">U–Science<span class="brand-dot" aria-hidden="true"></span></a>
     <a class="github-link" href="https://github.com/u-science-lab">GitHub ↗</a>
   </header>
-  <main class="hero wrap">
+  <main>
+  <section class="hero wrap" aria-labelledby="intro-heading">
     <p class="eyebrow">Understand. Build. Discover.</p>
-    <h1>Open tools for<br>scientific <em>discovery.</em></h1>
+    <h1 id="intro-heading">Open tools for<br>scientific <em>discovery.</em></h1>
     <p class="intro">Connecting scientific questions, software and experiments.</p>
-    <a class="button" href="https://github.com/u-science-lab">Find us on GitHub <span aria-hidden="true">↗</span></a>
+  </section>
+  <section class="projects wrap" aria-labelledby="projects-heading">
+    <div class="section-heading"><h2 id="projects-heading">Our tools</h2><p>From designing probes to finding signals.</p></div>
+    <div class="project-grid">
+      <article class="project">
+        <p class="project-category">Image analysis</p>
+        <h3>U-FISH</h3>
+        <p class="project-description">Find fluorescent spots in 2D and 3D FISH images with a compact deep-learning model. Work through Python, the command line, or napari.</p>
+        <nav class="project-links" aria-label="U-FISH resources"><a href="https://github.com/u-science-lab/U-FISH">GitHub ↗</a><a href="https://u-fish.readthedocs.io/en/latest/">Documentation ↗</a><a href="https://doi.org/10.1186/s13059-025-03736-x">Paper ↗</a></nav>
+      </article>
+      <article class="project">
+        <p class="project-category">Probe design</p>
+        <h3>U-Probe</h3>
+        <p class="project-description">Define custom probe architectures and quality constraints in YAML. Build reproducible design workflows, with optional AI-agent assistance.</p>
+        <nav class="project-links" aria-label="U-Probe resources"><a href="https://github.com/u-science-lab/U-Probe">GitHub ↗</a><a href="https://www.u-probe.org/">Website &amp; docs ↗</a></nav>
+      </article>
+    </div>
+  </section>
+  <div class="wrap">
     <aside id="collaboration" class="collaboration"><h2>For collaborators</h2><p>Shared working documents are access-controlled and are not hosted on this website. Please contact the project collaborators for access to the original reference.</p></aside>
+  </div>
   </main>
   <footer class="site-footer wrap"><span>U-Science</span><span>Built with curiosity.</span></footer>
 </body>

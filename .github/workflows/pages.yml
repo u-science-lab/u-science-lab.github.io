@@ -22,7 +22,8 @@ jobs:
         run: |
           mkdir _site
           cp index.html site.css favicon.svg 404.html .nojekyll _site/
-          cp -R autofish-digital-twin _site/
+          mkdir _site/autofish-digital-twin
+          cp autofish-digital-twin/index.html _site/autofish-digital-twin/
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
