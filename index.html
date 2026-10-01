@@ -7,13 +7,13 @@
   <meta name="theme-color" content="#f5f5ef">
   <link rel="canonical" href="https://u-science-lab.github.io/">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="/site.css">
+  <link rel="stylesheet" href="/site.css?v=projects-2">
   <title>U-Science — Open tools for scientific discovery</title>
 </head>
 <body>
   <header class="site-header wrap">
     <a class="brand" href="/" aria-label="U-Science home">U–Science<span class="brand-dot" aria-hidden="true"></span></a>
-    <a class="github-link" href="https://github.com/u-science-lab">GitHub ↗</a>
+    <nav class="header-links" aria-label="Main navigation"><a href="#projects">Projects</a><a href="https://github.com/u-science-lab">GitHub ↗</a></nav>
   </header>
   <main>
   <section class="hero wrap" aria-labelledby="intro-heading">
@@ -21,22 +21,45 @@
     <h1 id="intro-heading">Open tools for<br>scientific <em>discovery.</em></h1>
     <p class="intro">Connecting scientific questions, software and experiments.</p>
   </section>
-  <section class="projects wrap" aria-labelledby="projects-heading">
-    <div class="section-heading"><h2 id="projects-heading">Our tools</h2><p>From designing probes to finding signals.</p></div>
-    <div class="project-grid">
-      <article class="project">
-        <p class="project-category">Image analysis</p>
-        <h3>U-FISH</h3>
-        <p class="project-description">Find fluorescent spots in 2D and 3D FISH images with a compact deep-learning model. Work through Python, the command line, or napari.</p>
-        <nav class="project-links" aria-label="U-FISH resources"><a href="https://github.com/u-science-lab/U-FISH">GitHub ↗</a><a href="https://u-fish.readthedocs.io/en/latest/">Documentation ↗</a><a href="https://doi.org/10.1186/s13059-025-03736-x">Paper ↗</a></nav>
-      </article>
-      <article class="project">
-        <p class="project-category">Probe design</p>
-        <h3>U-Probe</h3>
-        <p class="project-description">Define custom probe architectures and quality constraints in YAML. Build reproducible design workflows, with optional AI-agent assistance.</p>
-        <nav class="project-links" aria-label="U-Probe resources"><a href="https://github.com/u-science-lab/U-Probe">GitHub ↗</a><a href="https://www.u-probe.org/">Website &amp; docs ↗</a></nav>
-      </article>
-    </div>
+  <section id="projects" class="projects wrap" aria-labelledby="projects-heading">
+    <div class="section-heading"><div><p class="eyebrow">Research software</p><h2 id="projects-heading">Built for the work<br>behind the discovery.</h2></div><p>Open-source tools for<br> imaging-based spatial biology.</p></div>
+    <article class="project project-fish" aria-labelledby="ufish-title">
+      <div class="project-copy">
+        <p class="project-category"><span class="project-number">01</span> Image analysis</p>
+        <h3 id="ufish-title">U-FISH</h3>
+        <p class="project-tagline">Find the signal.<br> Keep the detail.</p>
+        <p class="project-description">Detect fluorescent spots across diverse FISH images. A compact neural network enhances the image before locating spots, with support for both 2D images and 3D volumes.</p>
+        <ul class="capabilities" aria-label="U-FISH capabilities"><li>2D &amp; 3D detection</li><li>Python &amp; CLI</li><li>napari plugin</li></ul>
+        <div class="project-actions"><a class="button" href="https://u-fish.readthedocs.io/en/latest/">Explore U-FISH <span aria-hidden="true">↗</span></a><a class="source-link" href="https://github.com/u-science-lab/U-FISH">Source code ↗</a></div>
+        <a class="publication" href="https://doi.org/10.1186/s13059-025-03736-x"><span class="publication-dot" aria-hidden="true"></span>Genome Biology · 2025 <span aria-hidden="true">↗</span></a>
+      </div>
+      <figure class="project-visual fish-visual">
+        <div class="visual-header"><span>The detection workflow</span><a href="/assets/projects/ufish-overview.png" target="_blank" rel="noopener" aria-label="View full U-FISH workflow figure">View figure ↗</a></div>
+        <a class="figure-link" href="/assets/projects/ufish-overview.png" target="_blank" rel="noopener"><img src="/assets/projects/ufish-overview.png" width="1260" height="688" alt="Official U-FISH workflow: original FISH image, UFish-Net enhancement and detected spots, with example results below." decoding="async"></a>
+        <div class="workflow-strip" aria-label="U-FISH workflow"><span>Image</span><span aria-hidden="true">→</span><span>Enhance</span><span aria-hidden="true">→</span><span>Detect</span></div>
+        <figcaption>Original figure from the <a href="https://github.com/u-science-lab/U-FISH">U-FISH project</a>.</figcaption>
+      </figure>
+    </article>
+    <article class="project project-probe" aria-labelledby="uprobe-title">
+      <div class="project-copy">
+        <p class="project-category"><span class="project-number">02</span> Probe design</p>
+        <h3 id="uprobe-title">U-Probe</h3>
+        <p class="project-tagline">Your experiment.<br> Your probe architecture.</p>
+        <p class="project-description">Describe probe components and constraints in YAML, then assemble and filter candidates in a reproducible workflow. Use established FISH designs or create custom structures, with optional AI-agent assistance.</p>
+        <ul class="capabilities" aria-label="U-Probe capabilities"><li>Custom architectures</li><li>Automated quality checks</li><li>Agent-ready</li></ul>
+        <div class="project-actions"><a class="button" href="https://www.u-probe.org/">Explore U-Probe <span aria-hidden="true">↗</span></a><a class="source-link" href="https://github.com/u-science-lab/U-Probe">Source code ↗</a></div>
+        <a class="publication" href="https://www.biorxiv.org/content/10.64898/2026.04.12.717982v1"><span class="publication-dot" aria-hidden="true"></span>bioRxiv · Preprint <span aria-hidden="true">↗</span></a>
+      </div>
+      <figure class="project-visual probe-visual">
+        <div class="visual-header"><span>Inside the probe designer</span><span class="video-label">Official walkthrough</span></div>
+        <video controls playsinline preload="none" poster="/assets/projects/uprobe-editor.jpg" width="1920" height="1080" aria-label="U-Probe official custom probe design tutorial">
+          <source src="https://www.u-probe.org/video/custom.mp4" type="video/mp4">
+          <a href="https://www.u-probe.org/#tutorial-videos">Watch the official tutorial.</a>
+        </video>
+        <div class="workflow-strip" aria-label="U-Probe workflow"><span>Define</span><span aria-hidden="true">→</span><span>Assemble</span><span aria-hidden="true">→</span><span>Evaluate</span></div>
+        <figcaption>Custom structures and quality constraints, from the <a href="https://www.u-probe.org/#tutorial-videos">official tutorial</a>. <a class="video-fallback" href="https://www.u-probe.org/#tutorial-videos">Watch on website ↗</a></figcaption>
+      </figure>
+    </article>
   </section>
   <div class="wrap">
     <aside id="collaboration" class="collaboration"><h2>For collaborators</h2><p>Shared working documents are access-controlled and are not hosted on this website. Please contact the project collaborators for access to the original reference.</p></aside>

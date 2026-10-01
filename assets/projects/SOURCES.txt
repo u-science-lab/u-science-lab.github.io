@@ -1,0 +1,43 @@
+U-Science project showcase assets
+
+U-FISH overview figure (unmodified):
+https://github.com/u-science-lab/U-FISH/blob/main/docs/ufish.png
+Downloaded 2026-09-30 from the project's public repository.
+License: MIT; copyright (c) 2023 GangCaoLab. Full notice below.
+
+U-Probe editor preview:
+Frame at 00:45 from the project's official custom probe design tutorial:
+https://www.u-probe.org/video/custom.mp4
+https://www.u-probe.org/#tutorial-videos
+Extracted 2026-09-30; no generated or reconstructed application UI.
+The video is embedded from the official site, loaded only on user request.
+Credit: U-Probe Team. This is the team's own project showcase.
+
+Project descriptions and links:
+https://github.com/u-science-lab/U-FISH
+https://u-fish.readthedocs.io/en/latest/
+https://doi.org/10.1186/s13059-025-03736-x
+https://github.com/u-science-lab/U-Probe
+https://www.u-probe.org/
+
+MIT License (U-FISH figure)
+
+Copyright (c) 2023 GangCaoLab
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
