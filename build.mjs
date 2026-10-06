@@ -16,7 +16,7 @@ for (const file of ['index.html', '404.html']) {
   await writeFile(path.join(output, file), html.replace(/href="\/site\.css(?:\?[^"]*)?"/g, `href="/assets/${cssName}"`));
 }
 // Explicit publish list: research images and attribution only, not development files.
-for (const file of ['favicon.svg', '.nojekyll', 'assets/projects/ufish-overview.png', 'assets/projects/uprobe-editor.jpg', 'assets/projects/SOURCES.txt', 'autofish-digital-twin/index.html']) {
+for (const file of ['favicon.svg', '.nojekyll', 'assets/projects/ufish-concept.webp', 'assets/projects/uprobe-concept.webp', 'assets/projects/ufish-overview.png', 'assets/projects/uprobe-editor.jpg', 'assets/projects/SOURCES.txt', 'autofish-digital-twin/index.html']) {
   await mkdir(path.dirname(path.join(output, file)), { recursive: true });
   await cp(path.join(root, file), path.join(output, file));
 }

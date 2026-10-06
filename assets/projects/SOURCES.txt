@@ -1,5 +1,15 @@
 U-Science project showcase assets
 
+Homepage concept illustrations:
+ufish-concept.webp and uprobe-concept.webp
+Generated with the built-in GPT Image tool on 2026-10-05, then compressed
+to WebP without creative alterations. The illustration briefs were grounded
+in the public project READMEs and documentation linked below.
+These are schematic concept illustrations, NOT microscopy measurements,
+model predictions, executable configuration examples, or experimental data.
+The complete prompts are preserved in illustration-prompts.txt.
+
+Legacy reference assets (no longer displayed on the homepage):
 U-FISH overview figure (unmodified):
 https://github.com/u-science-lab/U-FISH/blob/main/docs/ufish.png
 Downloaded 2026-09-30 from the project's public repository.
@@ -10,7 +20,7 @@ Frame at 00:45 from the project's official custom probe design tutorial:
 https://www.u-probe.org/video/custom.mp4
 https://www.u-probe.org/#tutorial-videos
 Extracted 2026-09-30; no generated or reconstructed application UI.
-The video is embedded from the official site, loaded only on user request.
+Previously used as an opt-in homepage video; no longer displayed.
 Credit: U-Probe Team. This is the team's own project showcase.
 
 Project descriptions and links:

@@ -27,9 +27,9 @@ test('both pages use the current content-hashed stylesheet', async () => {
     assert.doesNotMatch(page, /href="\/site\.css/);
   }
 });
-test('research media is accessible and video is opt-in', () => {
-  assert.match(html, /alt="Official U-FISH workflow/);
-  assert.match(html, /<video controls playsinline preload="none"/);
-  assert.doesNotMatch(html, /autoplay/);
-  assert.match(html, /aria-label="U-Probe official custom probe design tutorial"/);
+test('concept illustrations are accessible and clearly distinguished from results', () => {
+  assert.match(html, /alt="Concept illustration: diverse FISH images/);
+  assert.match(html, /alt="Concept illustration: YAML-defined parts/);
+  assert.equal((html.match(/<figcaption>Concept illustration<\/figcaption>/g) || []).length, 2);
+  assert.doesNotMatch(html, /Original figure|View figure|<video/i);
 });

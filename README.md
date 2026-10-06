@@ -11,8 +11,10 @@ are based on their repository READMEs and official documentation:
 ## Edit and preview
 
 Edit `index.html` and `site.css`. Keep descriptions concise and link to the
-projects' own sites for detailed documentation. Official figures and tutorial
-previews live in `assets/projects/`; attribution is recorded in `SOURCES.txt`.
+projects' own sites for detailed documentation. The two homepage illustrations
+were generated with GPT Image to explain the projects' ideas, not to present
+experimental results. Assets, provenance and generation prompts live in
+`assets/projects/`; see `SOURCES.txt` and `illustration-prompts.txt`.
 
 ```sh
 node build.mjs
@@ -23,5 +25,5 @@ python3 -m http.server 8090 --directory _site
 Open http://localhost:8090/. Check desktop and narrow layouts before pushing.
 The Pages workflow deploys an explicit list of public files on a push to `main`.
 Each stylesheet gets a content-hashed filename, so new markup never depends on
-a stale cached stylesheet. Videos use the official host, do not autoplay and
-are not downloaded until the visitor chooses to play them.
+a stale cached stylesheet. Illustrations use compressed WebP files and load
+lazily, with descriptive alternative text.
